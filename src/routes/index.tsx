@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { ArrowDown, ArrowUpRight, MapPin, Sun, MoveUpRight, PanelsTopLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { RoomViewer } from '@/components/RoomViewer';
+import { ArinaTour } from '@/components/ArinaTour';
 import windows from '@/assets/windows-clean.jpg';
 
 export const Route = createFileRoute('/')({
@@ -27,6 +28,7 @@ function Index() {
       <div className="hero-side">СВЕТ / ПРОСТРАНСТВО / ВСТРЕЧИ</div>
     </section>
     <section className="facts section-wrap" aria-label="Особенности помещения"><div><strong>123<span>м²</span></strong><p>пространства для идей</p></div><div><strong>4,5<span>м</span></strong><p>высота потолка — до</p></div><div><strong>2<span>арки</span></strong><p>огромных окна 4 × 3 м</p></div><div className="fact-view"><Sun /><p>Естественный свет<br /><span>и вид на Библиотеку</span></p></div></section>
+    <ArinaTour />
     <RoomViewer />
     <section id="view" className="window-section section-wrap"><div className="section-heading"><div><span className="eyebrow">02 / ВИД ИЗ ОКНА</span><h2>Вдохновение за окном</h2></div><p>Та самая Библиотека.<br />Тот самый свет.</p></div><div className="window-photo"><img src={windows} alt="Национальная библиотека через два арочных окна на закате" loading="lazy" /><span><MapPin size={17} />Национальная библиотека Беларуси</span></div><div className="window-details"><div><PanelsTopLeft /><h3>Арочные окна</h3><p>Два окна размером 4 × 3 метра.<br />Город становится частью пространства.</p></div><div><Sun /><h3>Естественный свет</h3><p>Дневной свет и тёплые оттенки заката.<br />У каждой встречи своё настроение.</p></div><div><MoveUpRight /><h3>Воздух и высота</h3><p>Открытый потолок высотой до 4,5 метра.<br />Свобода для новых идей.</p></div></div></section>
     <footer className="site-footer section-wrap"><a href="#" className="footer-brand">АРКА 123</a><span>Встречаемся напротив Библиотеки.</span><a href="#space">Вернуться в пространство<ArrowUpRight size={16} /></a></footer>
