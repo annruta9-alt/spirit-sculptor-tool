@@ -35,8 +35,8 @@ export function ArinaTour() {
 
   const pos = p * (scenes.length - 1);
   const active = Math.round(pos);
-  // Arina walks from right to left across the tour, then steps aside at the window.
-  const x = 30 - p * 55;
+  // Arina walks from right to left across the tour, staying clear of the captions.
+  const x = 28 - Math.sin(p * Math.PI) * 14;
   const bob = Math.sin(pos * Math.PI * 2) * 6;
 
   return (
