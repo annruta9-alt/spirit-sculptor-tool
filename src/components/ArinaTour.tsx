@@ -51,8 +51,8 @@ export function ArinaTour() {
         <div className="tour-shade" />
         <img src={arina} alt="Арина — хозяйка окна" width={768} height={1344} className="tour-arina" style={{ transform: `translateX(${x}vw) translateY(${bob}px)` }} />
         <div className="tour-caption" key={active}>
-          <span className="eyebrow">{scenes[active].kicker}</span>
-          <p>{scenes[active].text}</p>
+          <span className="eyebrow">{scenes[active]?.kicker}</span>
+          <p>{scenes[active]?.text}</p>
         </div>
         <div className="tour-progress"><span style={{ transform: `scaleX(${p})` }} /></div>
       </div>
